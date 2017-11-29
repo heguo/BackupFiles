@@ -97,11 +97,13 @@ namespace BackupFiles
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.button1.Enabled = false;
             Console.WriteLine($"{DateTime.Now} {this.ViewModel.FromPath} ==> {this.ViewModel.ToPath}");
             var fromPath = new DirectoryInfo(this.ViewModel.FromPath);
             var toPath = new DirectoryInfo(this.ViewModel.ToPath);
             var fileList = this.FindFiles();
             int count = 0;
+            int error = 0;
             foreach (var item in fileList)
             {
                 var file = item.FullName.Substring(this.ViewModel.FromPath.Length).Trim('\\').Trim('/');
@@ -116,10 +118,17 @@ namespace BackupFiles
                 }
                 catch
                 {
+                    error++;
                     Console.WriteLine($"copy file error: {item.FullName}");
                 }
             }
-            Console.WriteLine($"{DateTime.Now} copy {count} files success.");
+            var msg = $"{DateTime.Now} copy {count} files success. {error} files failed.";
+            Console.WriteLine(msg);
+            this.button1.Enabled = true;
+            if(!this.ViewModel.IsAutoStart)
+            {
+                MessageBox.Show(msg, "备份");
+            }
         }
 
     }
