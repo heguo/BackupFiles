@@ -1,5 +1,5 @@
-免责声明：备份失败，作者不负任何责任。
-程序提供源码，源码在: https://github.com/heguo/BackupFiles.git
+免责声明：共享软件，增量备份工具，备份失败，数据丢失，作者不负任何责任。
+程序源码在: https://github.com/heguo/BackupFiles.git
 WinServer2003上测试通过，需要 .net framework 2.0 支持（通常都有）
 
 cmd 执行下面这行指令，开始备份最近5天修改过的文件, 备份eoffice大概需要 3 分钟（不含压缩的时间）
