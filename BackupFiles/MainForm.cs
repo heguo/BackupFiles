@@ -69,7 +69,7 @@ namespace BackupFiles
 
         private IEnumerable<FileInfo> FindFiles()
         {
-            var date = DateTime.Now.Date.AddDays(-this.ViewModel.Days + 1);
+            var date = DateTime.Now.Date.AddDays(-this.ViewModel.Days);
             DirectoryInfo dirInfo = new DirectoryInfo(this.ViewModel.FromPath);
             if (string.IsNullOrEmpty(ViewModel.IgnoreFileList))
                 ViewModel.IgnoreFileList = string.Empty;

@@ -12,9 +12,9 @@ BackupFiles.exe -run:ÊÇ·ñ×Ô¶¯Æô¶¯ -from:Ðè±¸·ÝµÄÎÄ¼þ¼Ð -to:Ä¿±êÎÄ¼þ¼Ð -day:×î½üÐ
 run   ×Ô¶¯Ö´ÐÐ±¸·Ý£¬±¸·ÝÍê³É£¬×Ô¶¯¹Ø±Õ
 from ´ý±¸·ÝµÄÎÄ¼þ¼Ð
 to      ±¸·ÝÖÁÄ¿±êÎÄ¼þ¼Ð
-day   ×î½ü¼¸ÌìÄÚÐÞ¸ÄµÄÎÄ¼þ
+day   ×î½ü¼¸ÌìÄÚÐÞ¸ÄµÄÎÄ¼þ£¬0±íÊ¾½ñÌìÁè³¿ÁãÊ±Æð¼Æ£¬1±íÊ¾×òÌìÁè³¿ÁãÊ±Æð¼Æ
 ip      ±¸·Ý¹ý³ÌÖÐºöÂÔµôµÄÎÄ¼þ¼ÐÃû³Æ
-if       ±¸·Ý¹ý³ÌÖÐºöÂÔµôµÄÎÄ¼þÃû Èç: abc;.log
+if       ±¸·Ý¹ý³ÌÖÐºöÂÔµôµÄÎÄ¼þÃû£¬ Èç: abc;.log
 
 ¸½ backupfiles.bat ÎÄ¼þ£¬·ÅÔÚ E:\backupfiles£¬
 ¼ÙÉè eoffice °²×°ÔÚ D:\eoffice£¬Èç¹û²»ÊÇ£¬ÐÞ¸Ä´Ë´¦Îª eoffice ËùÔÚµÄÎÄ¼þ¼Ð£¬
