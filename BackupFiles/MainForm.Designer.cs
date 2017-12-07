@@ -156,7 +156,7 @@
             this.textBox5.Size = new System.Drawing.Size(259, 21);
             this.textBox5.TabIndex = 10;
             this.textBox5.Text = "BackupFiles.exe -run:是否自动启动 -from:需备份的文件夹 -to:目标文件夹 -day:最近修改天数 -ip:忽略的文件夹名称1;名称2" +
-    " -if:忽略的文件1;文件2 > backupfiles.log";
+    " -if:忽略的文件1;文件2>>backupfiles.log";
             // 
             // label6
             // 

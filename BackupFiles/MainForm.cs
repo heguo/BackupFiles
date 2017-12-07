@@ -122,7 +122,7 @@ namespace BackupFiles
                     Console.WriteLine($"copy file error: {item.FullName}");
                 }
             }
-            var msg = $"{DateTime.Now} copy {count} files success. {error} files failed.";
+            var msg = $"{DateTime.Now} {error} files failed. copy {count} files success.";
             Console.WriteLine(msg);
             this.button1.Enabled = true;
             if(!this.ViewModel.IsAutoStart)

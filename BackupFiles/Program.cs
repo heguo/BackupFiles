@@ -83,9 +83,6 @@ namespace BackupFiles
             if (string.IsNullOrEmpty(m.ToPath))
                 return null;
 
-            if (m.Days == 0)
-                return null;
-
             return m;
         }
     }
